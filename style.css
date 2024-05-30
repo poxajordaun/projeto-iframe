@@ -51,7 +51,7 @@ section#telefone {
     transform: translate(-50%, -50%);
 
     height: 627px;
-    width: 311px;
+    width: 312px;
     background: url(imagens/frame-iphone.png);
 
 }
@@ -66,11 +66,27 @@ iframe#tela {
 }
 
 img {
-    margin-left: 0px;
-    padding: 10px;
+    margin: 10px;
     width: 50px;
     height: 50px;
     
     /*Deixar as imagens arredondadas*/
-    border-radius: 40px;
+    border-radius: 50%;
+}
+
+
+/*Efeito nos botões das redes sociais*/
+section#redes-sociais img:hover{
+    /*Cria uma borda para ter animação no botão*/
+     border: 2px solid rgba(255, 255, 255, 0.586);
+
+     /*Faz com que quando passe o mouse sobre o botão as imagens desloquem pra cima e para o lado em 3px*/
+     transform: translate(-3px, -3px);
+
+     /*Faz uma sombra na caixa dos botões*/
+     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.468);
+
+     /*Faz com que a animação das caixas dos botões sejam fluidas e durem 0.5 segundos*/
+     transition: transform 0.5s, border 1s;
+    
 }
